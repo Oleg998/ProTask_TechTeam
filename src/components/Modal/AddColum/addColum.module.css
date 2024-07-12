@@ -1,0 +1,33 @@
+.form  {
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    padding: 18px 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px 0 rgba(22, 22, 22, 0.08);
+    opacity: 0.4;
+    border: 1px solid #bedbb0;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #161616;
+  }
+   
+ @media (min-width: 375px) {
+    .form {
+      width:287px;
+      
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .form {
+      width:302px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+  }

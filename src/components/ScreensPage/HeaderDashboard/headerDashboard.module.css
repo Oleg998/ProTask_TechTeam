@@ -1,0 +1,38 @@
+.headerDashboardSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleDashboard {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding-top: 14px;
+  padding-bottom: 26px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .titleDashboard {
+    font-size: 18px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 44px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .titleDashboard {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.theme_dark_title {
+  color: var(--dark-text-color);
+}
+
+.theme_light_title,
+.theme_violet_title {
+  color: var(--light-text-color);
+}

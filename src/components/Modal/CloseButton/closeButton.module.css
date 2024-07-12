@@ -1,0 +1,32 @@
+.btn_close {
+  border: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 0;
+  background: none;
+  stroke: black;
+  cursor: pointer;
+}
+
+.item_svg {
+  width: 18px;
+  height: 18px;
+}
+.item_use {
+  stroke: black;
+  fill: transparent;
+}
+
+.theme_dark {
+  stroke: white;
+  fill: transparent;
+}
+.theme_light {
+  stroke: black;
+  fill: transparent;
+}
+.theme_violet {
+  stroke: black;
+  fill: transparent;
+}

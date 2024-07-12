@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  width: calc(100vw - 20px * 2);
+  height: 100%;
+}
+
+.itemCardPresent {
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: calc(100% - 14px - 56px);
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    max-width: 334px;
+  }
+}

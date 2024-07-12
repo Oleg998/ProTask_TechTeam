@@ -1,0 +1,143 @@
+.form  {
+  
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .input {
+    padding: 14px;
+    border: 1px solid #bedbb0;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #161616;
+    opacity: 0.4;
+  }
+  
+  .input.theme_dark {
+    border: 1px solid #bedbb0;
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .input:focus {
+    opacity: 1;
+    outline: none;
+  }
+  
+  .input.theme_dark::placeholder {
+    color: #fff;
+  }
+
+  .input.theme_light {
+    border: 1px solid #bedbb0;
+  }
+
+  .input.theme_violet {
+    border: 1px solid #5255bc;
+  }
+
+  
+  .textarea{
+  border: 1px solid #bedbb0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #161616;
+  resize:none;
+  opacity: 0.4;
+  }
+
+  .textarea.theme_dark {
+    border: 1px solid #bedbb0;
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .textarea:focus {
+    opacity: 1;
+    outline: none;
+  }
+  
+  .textarea.theme_dark::placeholder {
+    color: #fff;
+  }
+
+  .textarea.theme_light {
+    border: 1px solid #bedbb0;
+  }
+
+  .textarea.theme_violet {
+    border: 1px solid #5255bc;
+  }
+ 
+  
+  .btn {
+    width: 100%;
+    padding: 10px 0 11px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #bedbb0;
+  
+    color: #161616;
+    font-size: 14px;
+    font-weight: 500;
+    transition: scale 250ms ease-in 0s;
+   
+  }
+  .btn:hover,
+  .btn:focus {
+    background:  #9dc888;
+  }
+
+  .btn.theme_dark {
+    background-color: #bedbb0;
+    
+  }
+  .btn.theme_light {
+    background-color:#bedbb0;
+  }
+  .btn.theme_violet {  
+  background-color:#7b7ede;
+  color: #fff;
+  } 
+  
+  
+  
+  .btn:focus,
+  .btn:hover {
+    background-color:  #9dc888;
+  }
+  
+  
+  .btn.theme_violet:focus,
+  .btn.theme_violet:hover {
+    background-color: #5255bc;
+  }
+  
+  @media (min-width: 375px) {
+    .form {
+      width:287px;
+      
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .form {
+      width:352px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+  }
+  

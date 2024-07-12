@@ -1,0 +1,39 @@
+.logoComponent {
+  display: flex;
+  /* width: 104px; */
+  height: 32px;
+  margin-top: 14px;
+  margin-left: 14px;
+  align-items: center;
+}
+
+.logoBg {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  fill: #fff;
+  width: 12px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logoComponent {
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+}
+
+.logoTitle {
+  font-style: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 8px;
+  color: inherit;
+}

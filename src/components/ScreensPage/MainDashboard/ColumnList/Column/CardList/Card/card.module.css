@@ -1,0 +1,174 @@
+.card {
+  position: relative;
+  padding: 14px 14px 14px 24px;
+  border-radius: 8px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.cardPriorityHigh::before {
+  background-color: var(--radio-green);
+}
+
+.cardPriorityMedium::before {
+  background-color: var(--radio-pink);
+}
+
+.cardPriorityLow::before {
+  background-color: var(--radio-blue);
+}
+
+.cardPriorityWithout::before {
+  background-color: var(--radio-grey);
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding-bottom: 8px;
+}
+
+.cardText {
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  max-width: 290px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.card::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: calc(100% - 24px - 20px);
+  opacity: 0.1;
+  top: 62%;
+  left: 24px;
+  transform: translateY(-50%);
+}
+
+.wrapPriorityDeadline {
+  display: flex;
+  gap: 14px;
+}
+
+.wrapLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wrapCardInfo {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 29px;
+}
+
+.infoText {
+  font-weight: normal;
+  font-size: 8px;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+}
+
+.info {
+  font-size: 10px;
+  letter-spacing: -0.02em;
+}
+
+.prioritySpanText {
+  display: flex;
+  gap: 4px;
+}
+
+.colorSpan {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.priorityHigh {
+  background-color: var(--radio-green);
+}
+
+.priorityMedium {
+  background-color: var(--radio-pink);
+}
+
+.priorityLow {
+  background-color: var(--radio-blue);
+}
+
+.priorityWithout {
+  background-color: var(--radio-grey);
+}
+
+/*  card theme  */
+
+.theme_dark_card {
+  background-color: var(--dark-plus-color);
+}
+
+.theme_light_card,
+.theme_violet_card {
+  background-color: var(--light-plus-color);
+}
+
+/* card after theme  */
+
+.theme_dark_card::after {
+  background-color: var(--dark-text-color);
+}
+
+.theme_light_card::after,
+.theme_violet_card::after {
+  background-color: var(--light-text-color);
+}
+
+/* text theme */
+
+.theme_dark_text {
+  color: var(--dark-text-color);
+}
+
+.theme_light_text,
+.theme_violet_text {
+  color: var(--light-text-color);
+}
+
+/*  description theme  */
+
+.theme_dark_descr {
+  opacity: 0.5;
+}
+
+.theme_light_descr,
+.theme_violet_descr {
+  opacity: 0.7;
+}
+
+/*  container for move task modal   */
+.modalMoveWrapper {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  overflow: visible;
+  z-index: 999;
+}

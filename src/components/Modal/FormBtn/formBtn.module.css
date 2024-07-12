@@ -1,0 +1,95 @@
+.btn {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bedbb0;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #161616;
+  transition: background-color 250ms ease-in 0s;
+}
+
+.btn.theme_dark {
+  background-color: #bedbb0;
+  
+}
+.btn.theme_light {
+  background-color:#bedbb0;
+}
+.btn.theme_violet {  
+background-color:#7b7ede;
+color: #fff;
+} 
+.item_svg:focus,
+.item_svg:hover {
+ scale: 1.5;
+}
+
+
+.btn:focus,
+.btn:hover {
+  background-color:  #9dc888;
+}
+
+.btn.theme_dark:focus,
+.btn.theme_dark:hover {
+  background-color:  #9dc888;
+}
+
+.btn.theme_light:focus,
+.btn.theme_light:hover {
+  background-color:  #9dc888;
+}
+
+.btn.theme_violet:focus,
+.btn.theme_violet:hover {
+  background-color: #5255bc;
+}
+
+
+
+.item {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.item.theme_dark {
+  background-color: #161616;
+  
+}
+.item.theme_light {
+  background-color: #161616;
+}
+.item.theme_violet {  
+  background-color: #fff;
+} 
+
+
+.item_svg {
+  width: 14px;
+  height: 14px;
+}
+
+.item_use {
+  stroke: white;
+  fill: transparent;
+}
+.item_use.theme_violet {  
+  stroke: black;
+  fill: transparent;
+} 
+

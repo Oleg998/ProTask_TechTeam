@@ -1,0 +1,23 @@
+.customRadio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radioInput {
+  position: absolute; /* Скрыть оригинальный input */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radioIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s; /* Плавный переход */
+}
+
+/* Стиль для выбранной радиокнопки */
+.radioInput:checked + .radioIcon {
+  transform: scale(1.1); /* Пример анимации */
+}

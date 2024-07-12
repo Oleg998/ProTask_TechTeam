@@ -1,0 +1,172 @@
+:root {
+  --Low: #8fa1d0;
+  --Medium: #e09cb5;
+  --High: #bedbb0;
+  --Without: rgba(22, 22, 22, 0.3);
+}
+
+input + label svg use {
+  stroke: transparent;
+}
+
+input[value='Low'] + label svg use {
+  fill: var(--Low);
+}
+
+input[value='Medium'] + label svg use {
+  fill: var(--Medium);
+}
+
+input[value='High'] + label svg use {
+  fill: var(--High);
+}
+
+input[value='Without'] + label svg use {
+  fill: var(--Without);
+}
+
+[value='Low']:checked + label svg use,
+[value='Medium']:checked + label svg use,
+[value='High']:checked + label svg use,
+[value='Without']:checked + label svg use {
+  fill: transparent;
+}
+
+input[value='Low']:checked  + label svg use {
+  stroke: var(--Low);
+}
+
+input[value='Medium']:checked  + label svg use {
+  stroke: var(--Medium);
+}
+
+input[value='High']:checked  + label svg use {
+  stroke: var(--High);
+}
+
+input[value='Without']:checked  + label svg use {
+  stroke: var(--Without);
+}
+
+
+[value='Low']:checked + label span,
+[value='Medium']:checked + label span,
+[value='High']:checked + label span,
+[value='Without']:checked + label span {
+  color: #161616;
+}
+
+[value='Low']:checked + .label_icon::before,
+[value='Medium']:checked + .label_icon::before,
+[value='High']:checked + .label_icon::before,
+[value='Without']:checked + .label_icon::before {
+  opacity: 1;
+}
+
+[value='Low']:checked + .label_icon::before {
+  background-color: var(--Low);
+}
+
+[value='Medium']:checked + .label_icon::before {
+  background-color: var(--Medium);
+}
+
+[value='High']:checked + .label_icon::before {
+  background-color: var(--High);
+}
+
+[value='Without']:checked + .label_icon::before {
+  background-color: var(--Without);
+}
+
+.label_icon {
+  display: flex;
+  align-items: center;
+}
+
+.label_icon::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  margin-left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--High);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+.radio_container_item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.icon {
+  height: 14px;
+  width: 14px;
+}
+.radio_input {
+  position: absolute;
+  opacity: 0;
+}
+
+
+
+.span {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: rgba(22, 22, 22, 0.5);
+}
+
+.theme_dark .span {
+  color: #ffffff;
+}
+
+
+
+.titel_conteiner {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.titel_line::before {
+  content: '';
+  position: absolute;
+  width: 252px;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.1);
+}
+.show_all_btn {
+  display: block;
+  border: none;
+  background-color: inherit;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: rgba(22, 22, 22, 0.5);
+}
+
+.titel_text {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #161616;
+}
+
+
+
+@media (min-width: 375px) {
+  .form {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+}
+
+@media (min-width: 1440px) {
+}

@@ -1,0 +1,292 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  padding: 14px;
+  border: 1px solid #bedbb0;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #161616;
+}
+
+.input.theme_dark {
+  border: 1px solid #bedbb0;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.input:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.input.theme_dark::placeholder {
+  color: #fff;
+}
+.input.theme_dark:focus {
+  outline: none;
+}
+.input.theme_light {
+  border: 1px solid #bedbb0;
+}
+.input.theme_light:focus {
+  outline: none;
+}
+.input.theme_violet {
+  border: 1px solid #5255bc;
+}
+.input.theme_violet:focus {
+  outline: none;
+}
+ 
+
+.textarea {
+  border: 1px solid #bedbb0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #161616;
+  resize: none;
+}
+
+.textarea.theme_dark {
+  border: 1px solid #bedbb0;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.textarea:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.textarea.theme_dark::placeholder {
+  color: #fff;
+}
+.textarea.theme_dark:focus {
+  outline: none;
+}
+.textarea.theme_light {
+  border: 1px solid #bedbb0;
+}
+.textarea.theme_light:focus {
+  outline: none;
+}
+.textarea.theme_violet {
+  border: 1px solid #5255bc;
+}
+.textarea.theme_violet:focus {
+  outline: none;
+}
+ 
+
+.sub_title {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: rgba(22, 22, 22, 0.5);
+}
+.sub_title.theme_dark {color: rgba(255, 255, 255, 0.5);}
+.sub_title.theme_violet{color: rgba(22, 22, 22, 0.5);}
+.sub_title.theme_light {color: rgba(22, 22, 22, 0.5);}
+
+
+:root {
+  --Low: #8fa1d0;
+  --Medium: #e09cb5;
+  --High: #bedbb0;
+  --Without: rgba(22, 22, 22, 0.3);
+  --WithoutBlackThema :rgba(255, 255, 255, 0.5);
+}
+.label_icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label_icon::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--High);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  opacity: 0;
+}
+
+input[value='Low'] + label svg use {
+  fill: var(--Low);
+  stroke: transparent;
+}
+
+input[value='Medium'] + label svg use {
+  fill: var(--Medium);
+  stroke: transparent;
+}
+
+input[value='High'] + label svg use {
+  fill: var(--High);
+  stroke: transparent;
+}
+
+input[value='Without'] + label svg use {
+  fill: var(--Without);
+  stroke: transparent;
+}
+
+input[value='Without'] + label svg use.icon.theme_dark {
+  fill: var(--WithoutBlackThema);
+  stroke: transparent;
+}
+
+input[value='Low']:checked + label svg use {
+  fill: transparent;
+  stroke: var(--Low);
+}
+
+input[value='Low']:checked + .label_icon::before {
+  opacity: 1;
+  background-color: var(--Low);
+}
+
+input[value='Medium']:checked + label svg use {
+  fill: transparent;
+  stroke: var(--Medium);
+}
+
+input[value='Medium']:checked + .label_icon::before {
+  opacity: 1;
+  background-color: var(--Medium);
+}
+
+input[value='High']:checked + label svg use {
+  fill: transparent;
+  stroke: var(--High);
+}
+input[value='High']:checked + .label_icon::before {
+  opacity: 1;
+  background-color: var(--High);
+}
+
+input[value='Without']:checked + label svg use {
+  fill: transparent;
+  stroke: var(--Without);
+}
+
+input[value='Without']:checked + label svg .icon.cardTheme {
+  fill: transparent;
+  stroke: var(--WithoutBlackThema);
+
+}
+
+input[value='Without']:checked + .label_icon::before {
+  opacity: 1;
+  background-color: var(--Without);
+}
+
+input[value='Without']:checked + label.label_icon.cardTheme::before {
+  opacity: 1;
+  background-color: white
+}
+
+.radio_container {
+  margin-bottom: 14px;
+}
+.radio_container_item {
+  display: flex;
+  gap: 8px;
+}
+.icon {
+  height: 14px;
+  width: 14px;
+}
+.radio_input {
+  position: absolute;
+  opacity: 0;
+}
+
+.datapicer_conteinet {
+  margin-bottom: 40px;
+}
+
+/*DatePicker*/
+
+.customCalendar {
+  color: var(--dark-text-color);
+  background-color: var(--dark-input-focus-color);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+}
+
+.react-datepicker__day-name {
+  color: var(--dark-text-color);
+}
+
+.customDay {
+  color: var(--dark-text-color);
+}
+
+.react-datepicker__header {
+  background-color: blue;
+}
+
+.react-datepicker__header {
+  background-color: #333;
+}
+
+.calendar_divider {
+  border-top: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.customCalendar .react-datepicker__day-name {
+  color: white;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.date {
+  color: var(--dark-text-color);
+}
+
+.arrow {
+  stroke: white;
+}
+
+.react-datepicker__day-name {
+  color: white;
+}
+
+@media (min-width: 375px) {
+  .form {
+    width: 287px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .form {
+    width: 302px;
+  }
+}
+
+@media (min-width: 1440px) {
+}

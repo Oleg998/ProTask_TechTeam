@@ -1,0 +1,152 @@
+/*! =========DARK=========== */
+.current-theme_theme_dark {
+  /* background-color: #161616; */
+}
+.theme_dark [class*='createNewBoard_createNewBoardBtn__'] {
+  background-color: #121212;
+  color: #fff;
+}
+.theme_dark [class*='createNewBoardBtn'] {
+  border-color: #ffffff1a;
+}
+
+.theme_dark [class*='boardLink']:global(.active) {
+  background-color: #1f1f1f;
+}
+
+.theme_dark [class*='icon'] {
+  stroke: #ffffff80;
+}
+.theme_dark [class*='boardLink']:global(.active) {
+  background-color: #1f1f1f;
+}
+.theme_dark [class*='boardLink']:global(.active)::after {
+  display: block;
+}
+
+.theme_dark [class*='help'] {
+  background-color: #1f1f1f;
+}
+
+/* ======Calendar=========== */
+.theme_dark [class*='header--custom'] {
+  background-color: #1f1f1f;
+}
+.theme_dark [class*='arrow'] {
+  stroke: #fff;
+}
+.theme_dark [class*='addcardModal_date'] {
+  color: #fff;
+}
+.theme_dark [class*='calendarHeader'] {
+  border-bottom: 1px solid #333333;
+}
+.theme_dark [class*='__day-names'] [class*='day-name'] {
+  color: #ffffff80;
+}
+.theme_dark [class*='__month'] {
+  background-color: #1f1f1f;
+}
+.theme_dark [class*='react-datepicker__day--'][class*='--outside-month'] {
+  color: #333333;
+}
+.theme_dark [class*='react-datepicker__day'] {
+  color: #fff;
+}
+.theme_dark [class*='--selected'] {
+  color: #1f1f1f;
+}
+/*! =========LIGHT=========== */
+.theme_light {
+  background-color: #fff;
+  color: #161616;
+}
+.theme_light [class*='createNewBoardBtn'] {
+  color: rgba(22, 22, 22, 0.5);
+  border-color: #1616161a;
+}
+
+.theme_light [class*='boardLink']:global(.active) {
+  background-color: none;
+}
+.theme_light [class*='boardLink']:global(.active)::after {
+  display: block;
+}
+.theme_light [class*='help'] {
+  background-color: #f6f6f7;
+  color: #161616;
+}
+.theme_light [class*='needHelp'] {
+  stroke: #161616;
+}
+/*! =========VIOLET=========== */
+.theme_violet {
+  /* background-color: #5255bc;
+  color: #fff; */
+}
+.theme_violet [class*='createNewBoard_createNewBoardBtn__'] {
+  color: #fff;
+}
+.theme_violet [class*='logoBg'] {
+  background-color: #ecedfd;
+}
+.theme_violet [class*='logo'] {
+  fill: #5255bc;
+}
+
+.theme_violet [class*='createNewBoardBtn'] {
+  border-color: #ffffff1a;
+}
+.theme_violet [class*='createNewBoardIcon'] {
+  background-color: #b8bcfd;
+}
+.theme_violet [class*='createNewBoardIcon']:hover {
+  background-color: var(--button-violet-wrap-alt-color);
+}
+
+.theme_violet [class*='createNewBoardItem'] {
+  stroke: #fff;
+  background-color: transparent;
+}
+.theme_violet [class*='boardLink']:global(.active) {
+  background-color: #ffffff80;
+}
+
+.theme_violet [class*='boardLink']:global(.active)::after {
+  display: block;
+  background-color: #fff;
+}
+.theme_violet > [class^='needHelp'] {
+  background-color: #ecedfd66;
+}
+.theme_violet [class*='taskProSpan'] {
+  color: var(--violet-text-color);
+}
+.theme_violet [class*='logoutIcon'] {
+  stroke: var(--dark-text-color);
+}
+.theme_violet [class*='block']:hover [class*='logoutIcon'] {
+  stroke: var(--button-violet-wrap-alt-color);
+}
+
+/* ======Calendar=========== */
+.theme-violet > [class*='input-container'] .arrow-down {
+  background-color: var(--button-violet-wrap-alt-color);
+}
+.theme_violet [class*='addcardModal_customCalendar'] {
+  border: 1px solid var(--button-violet-color);
+}
+.theme_violet [class*='header--custom'] {
+  background-color: #fff;
+}
+
+.theme_violet [class*='--selected'] {
+  background-color: var(--button-violet-wrap-alt-color);
+  color: #fff;
+}
+.theme_violet [class*='--selected']:hover {
+  background-color: var(--button-violet-color);
+}
+.theme_violet [class*='day--keyboard-selected'] {
+  background-color: #5255bc6a;
+}

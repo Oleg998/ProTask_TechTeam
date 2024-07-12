@@ -1,0 +1,107 @@
+@media (min-width: 320px) {
+  .wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(#ffffff, #bedbb0);
+    padding: 10px;
+  }
+  .image {
+    width: 124px;
+    height: 124px;
+  }
+  .logoIconWrap {
+    width: 40px;
+    height: 40px;
+    background-color: #161616;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoIcon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0 14px 0;
+  }
+  .itemText {
+    padding: 5px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 335px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 129%;
+  }
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .button {
+    min-width: 300px;
+    padding: 15px 0;
+    background-color: #161616;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: -0.02em;
+    transition: 0.3s;
+  }
+  .button:hover{
+    background-color:#333333;
+  }
+  .link {
+    text-decoration: none;
+    color: #161616;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    transition: 0.5s;
+  }
+  .link:hover{
+    color:#333333;
+    text-shadow: 2px 2px 8px #333333;
+  }
+}
+
+@media (min-width: 768px) {
+  .itemText {
+    font-size: 40px;
+  }
+  .image {
+    width: 162px;
+    height: 162px;
+  }
+  .button {
+    min-width: 335px;
+  }
+  .logoIconWrap {
+    width: 48px;
+    height: 48px;
+  }
+  .logoIcon {
+    width: 25px;
+    height: 24px;
+  }
+}

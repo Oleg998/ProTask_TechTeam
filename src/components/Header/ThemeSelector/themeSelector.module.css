@@ -1,0 +1,109 @@
+.select {
+  display: flex;
+  position: relative;
+  gap: 2px;
+}
+
+.arrowIcon {
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  width: 100px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  z-index: 10;
+  background: white;
+}
+
+.iconVector {
+  width: 8px;
+  height: 4px;
+}
+
+.themeTitle {
+  margin-right: 4px;
+}
+
+.theme_dark {
+  .themeTitle {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .options {
+    background-color: #151515;
+    border: 1px solid #bedbb0;
+    border-radius: 8px;
+  }
+
+  .optionTheme {
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .optionTheme:hover {
+    color: #bedbb0;
+    transform: scale(1.1);
+  }
+}
+
+.theme_light {
+  .options {
+    background-color: #fcfcfc;
+    border: 1px solid #bedbb0;
+    border-radius: 8px;
+  }
+
+  .optionTheme {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .optionTheme:hover {
+    color: #bedbb0;
+    transform: scale(1.1);
+  }
+
+  .themeTitle {
+    color: rgba(22, 22, 22, 0.8);
+  }
+
+  .iconVector {
+    fill: rgba(22, 22, 22, 0.8);
+  }
+
+  .arrowIcon {
+    color: rgba(22, 22, 22, 0.8);
+  }
+}
+
+.theme_violet {
+  .options {
+    background-color: #fcfcfc;
+    border: 1px solid #ecedfd;
+    border-radius: 8px;
+  }
+
+  .optionTheme {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .optionTheme:hover {
+    color: #5255bc;
+    transform: scale(1.1);
+  }
+
+  .themeTitle {
+    color: rgba(22, 22, 22, 0.8);
+  }
+
+  .arrowIcon {
+    color: rgba(22, 22, 22, 0.8);
+  }
+}

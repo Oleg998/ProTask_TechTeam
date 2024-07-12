@@ -1,0 +1,193 @@
+.filterButtonWrap {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 26px;
+  padding-right: 20px;
+}
+
+.filterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  opacity: 0.8;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filterButton:hover,
+.filterButton:focus {
+  opacity: 1;
+}
+
+.filterIcon {
+  stroke-width: 1.5px;
+  opacity: 0.8;
+  width: 16px;
+  height: 14px;
+  fill: none;
+}
+
+.theme_dark_filterButton {
+  color: var(--dark-text-color);
+}
+
+.theme_light_filterButton,
+.theme_violet_filterButton {
+  color: var(--light-text-color);
+}
+
+.theme_dark_filterIcon {
+  stroke: var(--dark-text-color);
+}
+
+.theme_light_filterIcon,
+.theme_violet_filterIcon {
+  stroke: var(--light-text-color);
+}
+
+.filterModal {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 100;
+  width: 250px;
+  background-color: var(--light-header-color);
+  box-shadow: 0 4px 16px 0 rgba(22, 22, 22, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.filterModalTitle {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--light-text-color);
+  margin-bottom: 16px;
+}
+
+.filterPriorityShowAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  flex-shrink: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: rgba(22, 22, 22, 0.5);
+}
+
+.filterInput {
+  width: 100%;
+  padding: 4px;
+
+  border: none;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.1);
+
+  background: transparent;
+}
+
+.filterPriority {
+  margin-top: 14px;
+}
+
+.filterPriorityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+.filterPriorityTitle {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--light-text-color);
+}
+
+.filterPriorityLabel {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+
+  width: 100%;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--light-text-color);
+}
+
+.filterPriorityLabel:last-child {
+  margin-bottom: 0;
+}
+
+.radioBtn {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.radioBox {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Checked */
+.radioBtn:checked + .radioBox {
+  background-color: #4a90e2;
+}
+
+/* Focused */
+.radioBtn:focus + .radioBox {
+  box-shadow: 0 0 0 0.2em #4a90e2;
+}
+
+/* Disabled */
+.radioBtn:disabled + .radioBox {
+  box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+.radioBtn:checked:disabled + .radioBox {
+  background-color: #9b9b9b;
+}
+
+@media screen and (min-width: 768px) {
+  .filterButtonWrap {
+    padding-top: 20px;
+    padding-right: 32px;
+  }
+  .filterIcon {
+    height: 16px;
+  }
+  .filterModal {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .filterButtonWrap {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 24px;
+  }
+  .filterIcon {
+    height: 14px;
+  }
+}

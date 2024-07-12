@@ -1,0 +1,174 @@
+@import-normalize; /* bring in normalize.css styles */
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  /*Dark theme*/
+
+  --dark-main-color: #232323;
+  --dark-background-color: #1f1f1f;
+
+  --dark-input-color: #212121;
+  --dark-input-focus-color: #1f1f1f;
+
+  --dark-button-color: #161616;
+
+  --dark-text-color: #ffffff;
+
+  --dark-plus-color: #121212;
+
+  /* Light theme */
+
+  --light-main-color: #fdfdfd;
+  --light-background-color: #f6f6f7;
+
+  --button-light-color: #bedbb0;
+  --button-light-alt-color: #9dc888;
+
+  --light-text-color: #161616;
+
+  --light-header-color: #fcfcfc;
+
+  --light-plus-color: #ffffff;
+
+  /* Violet theme */
+
+  --violet-main-color: #d6d8ff;
+  --violet-background-color: #ecedfd;
+
+  --button-violet-color: #b8bcfd;
+  --button-violet-alt-color: #979cea;
+
+  --button-violet-wrap-color: #5255bc;
+  --button-violet-wrap-alt-color: #7b7ede;
+
+  --violet-text-color: #5255bc;
+
+  /*Radio buttons color*/
+
+  --radio-grey: #656565;
+  --radio-blue: #8fa1d0;
+  --radio-pink: #e09cb5;
+  --radio-green: #bedbb0;
+}
+
+#theme-dark,
+#theme-light,
+#theme-violet {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 2px 10px;
+  border: 1px solid white;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+#theme-dark.active,
+#theme-light.active,
+#theme-violet.active {
+  opacity: 1;
+}
+
+#theme-dark {
+  background-color: #000;
+}
+
+.theme_dark {
+  background-color: red;
+}
+
+.theme_light {
+  background-color: lightblue;
+}
+
+.theme_violet {
+  background-color: palevioletred;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #e8e8e8;
+}
+
+/* ======= Light ========= */
+[class*='cardList']::-webkit-scrollbar {
+  background: #e8e8e8;
+}
+[class*='cardList']::-webkit-scrollbar-thumb {
+  background-color: #1616161a;
+}
+
+/* ======= Dark ========= */
+body [class*='theme_dark'] *::-webkit-scrollbar {
+  background: #ffffff37;
+}
+body [class*='theme_dark'] *::-webkit-scrollbar-thumb {
+  background: #121212;
+}
+
+/* ======= Violet ======== */
+body [class*='theme_violet'] *::-webkit-scrollbar {
+  background: #fff;
+}
+body [class*='theme_violet'] *::-webkit-scrollbar-thumb {
+  background: #b8bcfd;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label {
+  margin: 0;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.react-datepicker__month-container {
+  font-family: 'Poppins', sans-serif;
+}

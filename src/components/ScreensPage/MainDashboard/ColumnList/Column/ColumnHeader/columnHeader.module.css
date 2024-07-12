@@ -1,0 +1,28 @@
+.columnHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-plus-color);
+  color: var(--light-text-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.columnTiltle {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.theme_dark_header {
+  background-color: var(--dark-plus-color);
+  color: var(--dark-text-color);
+}
+
+.theme_light_header,
+.theme_violet_header {
+  background-color: var(--light-plus-color);
+  color: var(--light-text-color);
+}

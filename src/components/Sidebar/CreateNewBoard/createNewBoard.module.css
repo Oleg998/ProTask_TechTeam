@@ -1,0 +1,48 @@
+.createNewBoardTitle {
+  font-family: 'Poppins';
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%; /* 21/14 */
+  max-width: 76px;
+  text-align: left;
+}
+
+.createNewBoardBtn {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  /* border-color: inherit; */
+  width: 197px;
+  height: 70px;
+  display: flex;
+  margin-left: 14px;
+  margin-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createNewBoardIcon {
+  width: 40px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--button-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.createNewBoardIcon:hover {
+  background-color: var(--button-light-alt-color);
+}
+
+.createNewBoardItem {
+  stroke: #121212;
+  fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .createNewBoardBtn {
+    margin-left: 24px;
+    width: 212px;
+  }
+}
